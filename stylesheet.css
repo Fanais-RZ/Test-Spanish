@@ -1,0 +1,297 @@
+#div3, #div6, #div8 {
+    background-color: white;
+}
+
+#div1, #div4, #div9 {
+    background-color:#02557d;
+}
+
+#div7 {
+    background-color: #efefef;
+}
+
+#div5 {
+    background: url("imagenes/BACKGROUND\ BENEFITS.jpg") no-repeat center; 
+    background-size: cover;
+    /* max-height: 266px; */
+    position: relative;
+}
+.avatar{
+    height:100px;
+    width:100px;
+}
+
+#div9 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p, ul, a, div{
+    color: white;
+}
+
+.drktext{
+    color: #02557d;
+}
+
+.bulleted{
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+  
+.bulleted::before {
+    content: "•";
+    color: #ffb749;
+    padding: 0 1rem;
+    margin-left: -2.6rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#heroform{
+    padding-top: 8rem !important;
+}
+
+.btn-primary{
+    background-color: #ffb749;
+    border-radius: 50px;
+    color: white;
+    border-color: white;
+    padding: .375rem 3rem;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    border-radius: 50px;
+    color: #ffb749;
+    border-color: #ffb749;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #ffb749;
+    border-radius: 25px;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 0 .2rem #efefef;
+}
+
+.btn-outline-warning{
+    margin: 15px 0;
+    border-radius: 50px;
+}
+
+
+
+#div2{
+    background: url("imagenes/IMAGEN\ HERO.jpg") no-repeat center; 
+    background-size: cover;
+    /* max-height: 892px; */
+    position: relative;
+    overflow: hidden;
+}
+
+#div2 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.layer {
+    background-color: rgba(63, 109, 124, 0.59);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#formwhole{
+    max-width: 500px;
+}
+
+#heroform{
+    padding: 4rem 1rem;
+}
+
+#div1{
+    padding-left: 1%;
+}
+
+#div1 a{
+    color: white;
+}
+
+i{
+    padding: 0 2%;
+    font-style: normal;
+}
+
+i:hover {
+    color:#ffb749;
+  }
+
+a{
+    padding-left: 1%;
+    font-size: 100%;
+}
+
+a:hover{
+    color: #ffb749;
+}
+
+a:active{
+    color: white;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+
+    color: #ffb749;
+}
+
+#div6{
+    overflow-y: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#div9 i{
+    padding: 0 5px 0 0;
+    font-style: normal;
+}
+
+#contenedor {
+    padding: 0 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#carrera{
+    border-radius: 25px;
+    margin: 2px 5px;
+    max-width: 500px;
+    max-height: 500px;
+    aspect-ratio: 2/3 auto;
+}
+
+#lastfooter {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 2px solid #648896;
+    line-height: 2px;
+}
+
+.form-control {
+    border-radius: 1.3rem;
+    background-color: #c0c0c080;
+}
+
+form{
+    padding: 25px;
+    background-color: white;
+}
+
+#formtitle{
+    color: white;
+    background-color: #014769;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0 ;
+    border-bottom: 5px solid #ffb749;
+}
+
+textarea{
+    resize: none;
+}
+
+#decoline{
+    margin-top: 12px;
+    border-bottom: 3px solid #ffb749;
+    line-height: 2px;
+}
+
+.overlaying{
+    border: 6px solid white;
+    margin-top: -50px;
+    max-width: 50%;
+}
+
+.tarjeta{
+    padding: 0;
+    border-radius: 15px;
+    margin: 0 15px;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    max-width: 219px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    box-sizing: border-box;
+}
+
+.card{
+    border-radius: 15px;
+}
+
+.card-img-top{
+    border-radius: 15px 15px 0 0;
+}
+
+.card-text{
+    color: #ffb749
+}
+
+.card-title{
+    margin-bottom: -0.1rem;
+    color: #014769
+}
+
+#vidframe{
+    max-width: 540px;
+    max-height: 246px;
+    background: url("imagenes/IMAGEN\ HERO.jpg") no-repeat center;;
+}
+
+#logo{
+    width: 6rem;
+    height: 4rem;
+}
+
+#logofoot{
+    margin: 3rem 0;
+    width: 6rem;
+    height: 4rem;
+}
+
+#logondfoot{
+    width: 6rem;
+    height: 2rem;
+}
+
+#prepended{
+    border-radius: 0 25px 25px 0;
+    padding: .375rem 1rem;
+}
