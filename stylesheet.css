@@ -55,6 +55,16 @@ ul {
     padding-top: 8rem !important;
 }
 
+#collapsibleNavbar {
+    background-color: #02557d;
+}
+
+@media (min-width: 992px) {
+    #collapsibleNavbar {
+        background-color: transparent;
+    }
+}
+
 .btn-primary{
     background-color: #ffb749;
     border-radius: 50px;
@@ -132,6 +142,15 @@ ul {
     color: white;
 }
 
+#genLink{ 
+    text-decoration: none;
+    font-size: 2.3vmin;
+}
+
+#newColor{
+    color: #02557d !important;
+}
+
 i{
     padding: 0 2%;
     font-style: normal;
@@ -139,7 +158,17 @@ i{
 
 i:hover {
     color:#ffb749;
-  }
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
 
 a{
     padding-left: 1%;
@@ -191,15 +220,94 @@ ul{
     border-radius: 25px;
     margin: 2px 5px;
     max-width: 500px;
-    max-height: 500px;
+    max-height: 300px;
     aspect-ratio: 2/3 auto;
 }
+
+.parent {
+    width: 45%;
+    height: 222px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+    display: inline-block;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fullw{
+    width: 100%;
+}
+
+.minicard{
+    height: 95px;
+}
+
+@media (max-width: 768px) {
+    .fakeMiniCard {
+        height: 90px;
+    }
+}
+
+.bg-one {background-image: url('imagenes/IMAGE\ \ CATEGORY\ ADMINISTRATION.jpg');}
+.bg-two {background-image: url('imagenes/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg');}
+.bg-tre {background-image: url('imagenes/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg');}
+.bg-four {background-image: url('imagenes/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg');}
+.bg-five {background-image: url('imagenes/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg');}
+.bg-six {background-image: url('imagenes/IMAGE\ \ CATEGORY\ BIOLOGY.jpg');}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding-top: 50%; */
+    padding-left: 15px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+bigChild{
+    padding-top: 20%;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
 
 #lastfooter {
     margin-top: 50px;
     padding: 20px 0;
     border-top: 2px solid #648896;
-    line-height: 2px;
+    line-height: 22px;
 }
 
 .form-control {

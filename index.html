@@ -1,315 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/css/easyzoom.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/src/easyzoom.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/css/easyzoom.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/src/easyzoom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <title>Universidad</title>
+  <title>Universidad</title>
 </head>
+
 <body>
-    <div id="div1" class="container-fluid fixed-top px-2">
-      <div id="contenedor">
-       <div class="row p-2">
-        <div class="col-sm-8 col-md-10">
-          <a href="tel:123456789"><i class="bi bi-telephone-fill">  123 456 789</i></a>
-          <a href="mailto:info@email.com"><i class="bi bi-envelope-fill">  info@email.com</i></a>
-        </div>
-        <div class="col-sm-3 col-md-2">
-          <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-        </div>
-       </div>
+  <div id="div1" class="container-fluid fixed-top px-2">
+
+    <div class="row p-2">
+      <div class="col-8 pr-0">
+        <a id="genLink" class="align-middle changeLink" href="tel:123456789"><i class="bi bi-telephone-fill"> 123 456
+            789</i></a>
+        <a id="genLink" class="align-middle changeLink" href="mailto:info@email.com"><i class="bi bi-envelope-fill">
+            info@email.com</i></a>
       </div>
-    </div>
-
-    <div id="div2" >
-
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="Videos/hero-video.mp4" type="video/mp4">
-      </video>
-
-     <div class="layer">
-      <div id="contenedor">
-
-       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent mt-5">
-        <a class="navbar-brand" href="#">
-          <img id="logo" src="imagenes/LOGO.png" width="100" height="60" alt="Universidad">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#div4">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#div6">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#div7">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#div9">Contact Us</a>
-            </li> 
-          </ul>
-        </div>
-
-      </nav>
-
-
-      <div id="heroform" class="row pt-4">
-        <div class="col my-5 my-md-auto">
-          <div class="p" style="font-size: 1.7rem;">Welcome a the University</div>
-          <div id="decoline" class="col-4"></div>
-          <div class="h1">We are an online <br>platform to make learning</div>
-          <button type="submit" class="btn btn-primary">Get Now</button>
-        </div>
-
-        <div class="col">
-        <div id="formwhole" class="mx-auto">
-          <div id="formtitle" class=" h4 text-center">
-            Register Now!
-          </div>
-         <form action="/action_page.php">
-
-          <div class="form-group">
-           <input type="text" class="form-control" placeholder="   Name" id="name" name="name">
-          </div>
-
-          <div class="row form-group">
-           <div class="col">
-              <input type="text" class="form-control" id="email" placeholder="   Email" name="email">
-            </div>
-           <div class="col">
-             <input type="text" class="form-control" id="pnum" placeholder="   Phone" name="pnum">
-           </div>
-         </div>
-
-         <div class="form-group">
-          <input type="text" class="form-control" placeholder="   Subject" id="subject">
-          </div>
-
-         <div class="form-group">
-           <textarea class="form-control" rows="5" placeholder="   Message" id="message"></textarea>
-          </div> 
-         <button type="submit" class="btn btn-primary">Send</button>
-         </form> 
-      </div>
-      </div>
-
-
+      <div class="col-4 pl-0 text-right">
+        <a href="https://www.youtube.com/" class="changeLink" target="_blank" rel="nofollow"><i
+            class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com/" class="changeLink" target="_blank" rel="nofollow"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="changeLink" target="_blank" rel="nofollow"><i
+            class="bi bi-facebook"></i></a>
       </div>
     </div>
   </div>
-    </div>
 
-    <div id="div3" class="container-fluid py-5">
+  <div id="div2">
+
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="Videos/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="layer">
       <div id="contenedor">
 
-        <div class="drktext">
-          <ul>
-            <li class="drktext bulleted p">The most popular</li>
-          </ul>
-          <div id="decoline" class="col-4"></div>
-          <h3>know what we offer you</h3>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark mt-3 pt-5">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="imagenes/LOGO.png" width="100" height="60" alt="Universidad">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#div4">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#div6">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#div7">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#div9">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+
+
+        <div id="heroform" class="row pt-4">
+          <div class="col my-5 my-md-auto">
+            <div class="p" style="font-size: 1.7rem;">Welcome a the University</div>
+            <div id="decoline" class="col-4"></div>
+            <div class="h1">We are an online <br>platform to make learning</div>
+            <button type="submit" class="btn btn-primary">Get Now</button>
+          </div>
+
+          <div class="col">
+            <div id="formwhole" class="mx-auto">
+              <div id="formtitle" class=" h4 text-center">
+                Register Now!
+              </div>
+              <form action="/action_page.php">
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="   Name" id="name" name="name">
+                </div>
+
+                <div class="row form-group">
+                  <div class="col">
+                    <input type="text" class="form-control" id="email" placeholder="   Email" name="email">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="pnum" placeholder="   Phone" name="pnum">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="   Subject" id="subject">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="   Message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="div3" class="container-fluid py-5">
+    <div id="contenedor">
+
+      <div class="drktext">
+        <ul>
+          <li class="drktext bulleted p">The most popular</li>
+        </ul>
+        <div id="decoline" class="col-4"></div>
+        <h3>know what we offer you</h3>
+      </div>
+
+      <div class="row d-flex my-5 justify-content-around">
+
+        <div class="col-12 col-md-3 mb-4 tarjeta">
+          <img class="card-img-top" src="imagenes/IMAGE CURSO 1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
         </div>
 
-        <div class="row d-flex my-5 justify-content-around">
-
-          <div class="col-12 col-md-3 mb-4 tarjeta">
-            <img class="card-img-top" src="imagenes/IMAGE CURSO 1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-         </div>
-
-         <div class="col-12 col-md-3 mb-4 tarjeta">
+        <div class="col-12 col-md-3 mb-4 tarjeta">
           <img class="card-img-top" src="imagenes/IMAGE CURSO 2.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
             <a href="#" class="btn btn-primary">Read More</a>
           </div>
-       </div>
-
-       <div class="col-12 col-md-3 mb-4 tarjeta">
-        <img class="card-img-top" src="imagenes/IMAGE CURSO 3.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
-          <a href="#" class="btn btn-primary">Read More</a>
-        </div>
         </div>
 
-      <div class="col-12 col-md-3 mb-4 tarjeta">
-       <img class="card-img-top" src="imagenes/IMAGE CURSO 4.jpg" alt="Card image cap">
-       <div class="card-body">
-         <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
-         <a href="#" class="btn btn-primary">Read More</a>
-       </div>
-     </div>
+        <div class="col-12 col-md-3 mb-4 tarjeta">
+          <img class="card-img-top" src="imagenes/IMAGE CURSO 3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
 
-      
+        <div class="col-12 col-md-3 mb-4 tarjeta">
+          <img class="card-img-top" src="imagenes/IMAGE CURSO 4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Design for the web with adobe photoshop</h5>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+
 
       </div>
 
       <div class="row">
         <div class="col text-center">
-         <button type="submit" class="btn btn-outline-warning justify-content-center ">View More</button>
+          <button type="submit" class="btn btn-outline-warning justify-content-center ">View More</button>
         </div>
-       </div>
-
-     </div>
-    </div>
-
-    <div id="div4" class="container-fluid py-5">
-      <div id="contenedor">
-
-        <div>
-          <ul>
-            <li class="bulleted p">About Us</li>
-          </ul>
-          <div id="decoline" class="col-4"></div>
-          <h3>Know everything we do for you</h3>
-        </div>
-        <div class="row pt-3">
-          <div class="col-12 col-md-6 order-first">
-            <div class="my-md-5 mw-md-50 my-auto justify-content-center">
-            The university is a physical place, buildings, laboratories, libraries... where students and teachers meet. The university is also a human.social system, that is, a set of elements that are related and interact with each other.
-            </div>
-          </div>
-          <div class=" col-12 col-md-6 mh-50 my-3">
-            <img class="img-fluid w-75 justify-content-center" src="imagenes/IMAGE ABOUT US.jpg" alt="About Us">
-          </div>
-          <div class=" col-6 order-last mt-0 mb-5">
-            <button href="#" class="btn btn-primary">Read More</button>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <div id="div5">
+    </div>
+  </div>
+
+  <div id="div4" class="container-fluid py-5">
+    <div id="contenedor">
+
       <div>
-      <div class="layer" id="contenedor">
-
-        <div class="row py-4 text-center">
-
-            <div class="col-6 col-sm-3">
-              <div class="rounded-circle mx-auto bg-light avatar">
-                <img class="w-75 mt-3" src="imagenes/ICONO 1.png" alt="">
-              </div>
-              <h3>Excellent <br> Content</h3>
-            </div>
-
-            <div class="col-6 col-sm-3">
-              <div class="rounded-circle mx-auto bg-light avatar">
-                <img class="w-75 mt-3" src="imagenes/ICONO 2.png" alt="">
-              </div>
-              <h3>Expert <br>Instructors</h3>
-            </div>
-
-            <div class="col-6 col-sm-3">
-              <div class="rounded-circle mx-auto bg-light avatar">
-                <img class="w-75 mt-3" src="imagenes/ICONO 3.png" alt="">
-              </div>
-              <h3>The Best <br>Professionals</h3>
-            </div>
-
-            <div class="col-6 col-sm-3">
-              <div class="rounded-circle mx-auto bg-light avatar">
-                <img class="w-75 mt-3" src="imagenes/ICONO 4.png" alt="">
-              </div>
-              <h3>Countless <br>Courses</h3>
-            </div>
-
-        </div>
-
+        <ul>
+          <li class="bulleted p">About Us</li>
+        </ul>
+        <div id="decoline" class="col-4"></div>
+        <h3>Know everything we do for you</h3>
       </div>
-      </div>
-    </div>
-
-    </div>
-
-    <div id="div6" class="container-fluid py-5">
-      <div id="contenedor">
-
-        <div class="drktext">
-          <ul>
-            <li class="drktext bulleted p">Study careers</li>
-          </ul>
-          <div id="decoline" class="col-4"></div>
-          <h3>Explore the different careers we offer</h3>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-sm-8">
-
-            <div class="row">
-              <div class="col-12 col-md-6 carrera bg-image img-fluid pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-              style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ ADMINISTRATION.jpg');
-                     height: 50vh">
-                <h3>Administration</h3>
-                <button href="#" class="btn btn-primary">Send</button>
-              </div>
-              <div class="col-12 col-md-6 carrera bg-image pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-              style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg');
-                     height: 50vh">
-                <h3>Accounting</h3>
-                <button href="#" class="btn btn-primary">Send</button>
-              </div>
-
-            </div>
-
-            <div class="col-12 carrera bg-image pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg');
-                   height: 50vh">
-              <h3>Architecture</h3>
-              <button href="#" class="btn btn-primary">Send</button>
-            </div>
+      <div class="row pt-3">
+        <div class="col-12 col-md-6 order-first">
+          <div class="my-md-5 mw-md-50 my-auto justify-content-center">
+            The university is a physical place, buildings, laboratories, libraries... where students and teachers meet.
+            The university is also a human.social system, that is, a set of elements that are related and interact with
+            each other.
           </div>
+        </div>
+        <div class=" col-12 col-md-6 mh-50 my-3">
+          <img class="img-fluid w-75 justify-content-center" src="imagenes/IMAGE ABOUT US.jpg" alt="About Us">
+        </div>
+        <div class=" col-6 order-last mt-0 mb-5">
+          <button href="#" class="btn btn-primary">Read More</button>
+        </div>
+      </div>
 
+    </div>
+  </div>
+
+  <div id="div5">
+
+    <div class="layer" id="contenedor">
+
+      <div class="row py-4 text-center">
+
+        <div class="col-6 col-sm-3">
+          <div class="rounded-circle mx-auto bg-light avatar">
+            <img class="w-75 mt-3" src="imagenes/ICONO 1.png" alt="">
+          </div>
+          <h3>Excellent <br> Content</h3>
+        </div>
+
+        <div class="col-6 col-sm-3">
+          <div class="rounded-circle mx-auto bg-light avatar">
+            <img class="w-75 mt-3" src="imagenes/ICONO 2.png" alt="">
+          </div>
+          <h3>Expert <br>Instructors</h3>
+        </div>
+
+        <div class="col-6 col-sm-3">
+          <div class="rounded-circle mx-auto bg-light avatar">
+            <img class="w-75 mt-3" src="imagenes/ICONO 3.png" alt="">
+          </div>
+          <h3>The Best <br>Professionals</h3>
+        </div>
+
+        <div class="col-6 col-sm-3">
+          <div class="rounded-circle mx-auto bg-light avatar">
+            <img class="w-75 mt-3" src="imagenes/ICONO 4.png" alt="">
+          </div>
+          <h3>Countless <br>Courses</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div id="div6" class="container-fluid py-5">
+    <div id="contenedor">
+
+      <div class="drktext">
+        <ul>
+          <li class="drktext bulleted p">Study careers</li>
+        </ul>
+        <div id="decoline" class="col-4"></div>
+        <h3>Explore the different careers we offer</h3>
+      </div>
+
+      <div class="row" style="padding: 0 60px;">
+        <div class="col-12 col-md-7">
+
+          <div class="row d-flex justify-content-around">
+
+            <div class="col-12 col-md-5 my-3 fakeMiniCard carrera parent">
+
+              <div class=" pb-3 pl-1 child bg-one">
+                <h3 style="font-size: 125%;">Administration</h3>
+                <button href="#" class="btn btn-primary">Explore</button>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-5 my-3 carrera parent fakeMiniCard">
+              <div class="pb-3 px-3 child bg-two">
+
+                <h3 style="font-size: 125%;">Accounting</h3>
+                <button href="#" class="btn btn-primary">Explore</button>
+              </div>
+            </div>
+
+          </div>
           
+          <div class="row d-flex justify-content-around">
+          <div class="col-12 col-md-11 mb-3 carrera parent fullw fakeMiniCard" style="height: 113px;">
+            <div class="pt-4 pb-3 mb-3 child bg-tre">
 
-          <div class="col-12 col-md-4 ">
-            <div class="col-12 carrera bg-image pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg');
-                   height: 50vh">
-              <h3>Mathematics</h3>
-              <button href="#" class="btn btn-primary">Send</button>
+              <h3>Architecture</h3>
+              <button href="#" class="btn btn-primary">Explore</button>
             </div>
-            <div class="col-12 carrera bg-image pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg');
-                   height: 50vh">
-              <h3>Programming</h3>
-              <button href="#" class="btn btn-primary ">Send</button></div>
-            <div class="col-12 carrera bg-image pt-5 w-100 h-50 easyzoom easyzoom--overlay" 
-            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ BIOLOGY.jpg');
-                   height: 50vh">
-              <h3>Biology</h3>
-              <button href="#" class="btn btn-primary">Send</button></div>
+          </div>
           </div>
         </div>
 
+
+        <div class="col-12 col-md-5" style="padding-right: 0;">
+
+          <div class="row d-flex justify-content-around col-12 my-3 carrera parent fullw minicard">
+            <div class="pb-3 px-3 child bg-four">
+
+
+              <!-- <div class="col-12 carrera bg-image pt-5 w-100 h-50 zoom" 
+            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg');
+                   height: 50vh"> -->
+              <h3>Mathematics</h3>
+              <button href="#" class="btn btn-primary">Explore</button>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-around col-12 my-3 carrera parent fullw minicard">
+            <div class="pb-3 px-3 child bg-five">
+              <!-- <div class="col-12 carrera bg-image pt-5 w-100 h-50" 
+            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg');
+                   height: 50vh"> -->
+              <h3>Programming</h3>
+              <button href="#" class="btn btn-primary ">Explore</button>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-around col-12 my-3 carrera parent fullw minicard">
+            <div class="pb-3 px-3 child bg-six">
+              <!-- <div class="col-12 carrera bg-image pt-5 w-100 h-50" 
+            style="background-image: url('imagenes/IMAGE\ \ CATEGORY\ BIOLOGY.jpg');
+                   height: 50vh"> -->
+              <h3>Biology</h3>
+              <button href="#" class="btn btn-primary">Explore</button>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
-  
-    <div id="div7" class="container-fluid py-5">
-      <div id="contenedor">
+  </div>
+
+  <div id="div7" class="container-fluid py-5">
+    <div id="contenedor">
 
       <div class="drktext">
         <ul>
@@ -332,28 +370,28 @@
             <div class="carousel-caption">
               <h3>Jhon Smith</h3>
               <p>Math Teacher</p>
-            </div>   
+            </div>
           </div>
           <div class="carousel-item">
             <img src="imagenes/IMAGE TEAM 2.jpg" alt="Chicago" width="500" height="500">
             <div class="carousel-caption">
               <h3>Dave Morgan</h3>
               <p>Math Teacher</p>
-            </div>   
+            </div>
           </div>
           <div class="carousel-item">
             <img src="imagenes/IMAGE TEAM 4.jpg" alt="New York" width="500" height="500">
             <div class="carousel-caption">
               <h3>Zara Smith</h3>
               <p>Biology Teacher</p>
-            </div>   
+            </div>
           </div>
           <div class="carousel-item">
             <img src="imagenes/IMAGE TEAM 3.jpg" alt="New York" width="500" height="500">
             <div class="carousel-caption">
               <h3>Jimena Soto</h3>
               <p>Math Teacher</p>
-            </div>   
+            </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -364,175 +402,191 @@
         </a>
       </div>
 
-        <div class="card-deck my-5 mx-2 d-none d-md-inline-flex">
-          <div class="card">
-            <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-            <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 1.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <h5 class="card-title">Jhon Smith</h5>
-              <h6 class="card-text">Math Teacher</h6>
-                <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-            </div>
-
+      <div class="card-deck my-5 mx-2 d-none d-md-inline-flex">
+        <div class="card">
+          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
+          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 1.jpg"
+            alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jhon Smith</h5>
+            <h6 class="card-text">Math Teacher</h6>
+            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-            <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 2.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <h5 class="card-title">Dave Morgan</h5>
-              <h6 class="card-text">Math Teacher</h6>
-                <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-            </div>
 
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-            <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 4.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <h5 class="card-title">Zara Smith</h5>
-              <h6 class="card-text mx-auto">Biology Teacher</h6>
-                <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-            </div>
-
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-
-            <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 3.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <h5 class="card-title">Jimena Soto</h5>
-              <h6 class="card-text">Math Teacher</h6>
-              <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-            </div>
-
-          </div>
         </div>
+        <div class="card">
+          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
+          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 2.jpg"
+            alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dave Morgan</h5>
+            <h6 class="card-text">Math Teacher</h6>
+            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
+          </div>
 
-        <div class="row">
-         <div class="col text-center">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
+          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 4.jpg"
+            alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title">Zara Smith</h5>
+            <h6 class="card-text mx-auto">Biology Teacher</h6>
+            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
+
+          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 3.jpg"
+            alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jimena Soto</h5>
+            <h6 class="card-text">Math Teacher</h6>
+            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
           <button type="submit" class="btn btn-primary justify-content-center ">View More</button>
-         </div>
         </div>
-
-      </div>
-    </div>
-
-    <div id="div8" class="container-fluid py-4">
-
-      <div id="review" class="carousel slide carousel-fade justify-content-center mx-auto" data-mdb-ride="carousel" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#review" data-slide-to="0" class="active"></li>
-          <li data-target="#review" data-slide-to="1"></li>
-        </ul>
-        
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active mx-auto">
-            <video class="img-fluid justify-content-center mx-auto" muted alt="video 1" width="1100" controls>
-              <source src="Videos/review-1.mp4" type="video/mp4"/>
-              Your browser does not support HTML video.
-            </video>
-          </div>
-
-          <div class="carousel-item mx-auto">
-            <video class="img-fluid mx-auto" muted alt="video 2" width="1100" controls>
-              <source src="Videos/hero-video.mp4" type="video/mp4"/>
-              Your browser does not support HTML video.
-            </video>
-          </div>
-
-        </div>
-        
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#review" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#review" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
       </div>
 
     </div>
+  </div>
 
-    <div id="div9" class="container-fluid">
-      <div id="contenedor">
-        <div class="row text-lg-left text-center">
-          <div class="col-sm-3">
-            <img id="logofoot" src="imagenes/LOGO.png" class="mx-auto d-block img-fluid" alt="LOGO">
-          </div>
+  <div id="div8" class="container-fluid py-4">
 
-          <div class="col-sm-3">
+    <div id="review" class="carousel slide carousel-fade justify-content-center mx-auto" data-mdb-ride="carousel"
+      data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#review" data-slide-to="0" class="active"></li>
+        <li data-target="#review" data-slide-to="1"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active mx-auto">
+          <video class="img-fluid justify-content-center mx-auto" muted alt="video 1" width="1100" controls>
+            <source src="Videos/review-1.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+
+        <div class="carousel-item mx-auto">
+          <video class="img-fluid mx-auto" muted alt="video 2" width="1100" controls>
+            <source src="Videos/hero-video.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#review" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#review" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="div9" class="container-fluid">
+    <div id="contenedor">
+      <div class="row text-lg-left text-center">
+        <div class="col-sm-3">
+          <img id="logofoot" src="imagenes/LOGO.png" class="mx-auto d-block img-fluid" alt="LOGO">
+        </div>
+
+        <div class="col-sm-3">
           <h5>Quick Links</h5>
           <ul>
-            <li><a href="#div4">About Us</li></a>
-            <li><a href="#div7">Team</li></a>
-            <li><a href="#">Contact Us</li></a>
-          </ul> 
-          </div>
+            <li><a id="genLink" href="#div4">About Us</li></a>
+            <li><a id="genLink" href="#div7">Team</li></a>
+            <li><a id="genLink" href="#">Contact Us</li></a>
+          </ul>
+        </div>
 
-          <div class="col-sm-3">
-            <h5>Contact Info</h5>
-            <ul>
-              
-          
-              <li><a href="tel:123456789"><i class="bi bi-telephone-fill">  123 456 789</i></a></li>
-              <li><a href="mailto:info@email.com"><i class="bi bi-envelope-fill">  info@email.com</i></a></li>
-              <li><a href="https://www.google.com/maps/"><i class="bi bi-geo-alt">  address, United Estates</i></a></li>
-            </ul>
-            <div class="row mx-auto justify-content-center">
-              <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
-              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-            </div> 
-          </div>
+        <div class="col-sm-3">
+          <h5>Contact Info</h5>
+          <ul>
 
-          <div class="col-sm-3">
-            <h5>NewsLetter</h5>
-            <p>Receive all our promotions and notifications</p>
+
+            <li><a id="genLink" href="tel:123456789"><i class="bi bi-telephone-fill"> 123 456 789</i></a></li>
+            <li><a id="genLink" href="mailto:info@email.com"><i class="bi bi-envelope-fill"> info@email.com</i></a></li>
+            <li><a id="genLink" href="https://www.google.com/maps/"><i class="bi bi-geo-alt"> address, United
+                  Estates</i></a></li>
+          </ul>
+          <div class="row mx-auto justify-content-center">
+            <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h5>NewsLetter</h5>
+          <p>Receive all our promotions and notifications</p>
 
           <div class="input-group">
-            <input type="mail" class="form-control"  aria-label="subscription mail" aria-describedby="btnGroupAddon">
+            <input type="mail" class="form-control" aria-label="subscription mail" aria-describedby="btnGroupAddon">
             <div class="input-group-prepend">
               <button id="prepended" type="submit" class="btn btn-primary">Submit</button>
             </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div id="lastfooter" class="row text-md-left text-center">
-          <div class="col-sm-10">
-            <p>© Copyright   University. All Rights Reserved</p>
-            <p>This Website Was Designed And Developed by Josesilvera.com</p>
-          </div>
-          <div class="col-sm-2">
-            <a href="https://josesilvera.com"><img id="logondfoot" src="imagenes/logo Silvera Enterprises.png" class="mx-auto d-block img-fluid" alt="Logo Silvera Enterprises"></a>
           </div>
         </div>
 
       </div>
+
+      <div id="lastfooter" class="row text-md-left text-center">
+        <div class="col-sm-10">
+          <p>© Copyright University. All Rights Reserved</p>
+          <p>This Website Was Designed And Developed by Josesilvera.com</p>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://josesilvera.com"><img id="logondfoot" src="imagenes/logo Silvera Enterprises.png"
+              class="mx-auto d-block img-fluid" alt="Logo Silvera Enterprises"></a>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <script>
-      $(window).scroll(function(){
+  <script>
+
+    $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      if(scroll < 200){
-          $('.fixed-top').css('background', 'transparent');
-          $('#div1').css('background', '#02557d');
-      } else{
-          $('.fixed-top').css('background', '#02557d');
-          $('#div1').css('background', 'white');
-          $('#div1.a').css('color', '#02557d');
-      }
-  });
+      if (scroll < 200) {
+        $('.navbar').css('background-color', 'transparent');
+        $('#div1').css('background', '#02557d');
+        $('#genLink').css('color', 'white');
+      } else {
+        $('.navbar').css('background-color', '#02557d');
+        $('#div1').css('background', 'white');
+        $('#genLink').css('color', '#02557d');
 
-  $(document).ready(function() {
-		var $easyzoom = $('.easyzoom').easyZoom();
-});
+        let containers = document.getElementsByClassName('changeLink');
+
+        for (let index = 0; index < containers.length; ++index) {
+          containers[index].classList.toggle('newColor');
+        }
+      }
+    });
+
+    $(document).ready(function () {
+      var $easyzoom = $('.easyzoom').easyZoom();
+    });
 
   </script>
 
 </body>
+
 </html>
