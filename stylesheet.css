@@ -275,6 +275,72 @@ bigChild{
     padding-top: 20%;
 }
 
+.btn-lg{
+    font-size: 3.3rem;
+    border-radius: 3.3rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.btn-outline-light{
+    border-color: transparent; 
+    color: #ffb749;
+    background-color: #fff;
+}
+
+#carouselButtons {
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 170px;
+    left: 0;
+    /* z-index: 1; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nameDiv{
+    width: 234px;
+    height: 27px;
+    color: #ffb749;
+    background-color: #efefef;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    border-radius: 3px;
+    font: italic small-caps bold;
+}
+
+.carousel-indicatorsTwo{
+    position: relative;
+    bottom: -30px;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators .active{
+    background-color: #ffb749;
+}
+
 .parent:hover .child, .parent:focus .child {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -301,6 +367,9 @@ bigChild{
     left: 0;
     background-color: rgba(52,73,94,0.75);
 }
+
+/
+
 
 
 #lastfooter {
