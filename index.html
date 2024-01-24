@@ -27,7 +27,7 @@
 </head>
 
 <body>
-  <div id="div1" class="container-fluid fixed-top px-2">
+  <div id="div1" class="container-fluid fixed-top px-2 stColor">
 
     <div class="row p-2">
       <div class="col-8 pr-0">
@@ -671,11 +671,13 @@ $('.carousel .carousel-item').each(function(){
       if (scroll < 200) {
         $('.navbar').css('background-color', 'transparent');
         $('#div1').css('background', '#02557d');
-        $('#genLink').css('color', 'white');
+        $('#div1 a').removeClass("ndColor");
+        $('#div1 a').addClass("stColor");
       } else {
         $('.navbar').css('background-color', '#02557d');
         $('#div1').css('background', 'white');
-        $('#genLink').css('color', '#02557d');
+        $('#div1 a').removeClass("stColor");
+        $('#div1 a').addClass("ndColor");
 
         var containers = document.getElementsByClassName('changeLink');
 
