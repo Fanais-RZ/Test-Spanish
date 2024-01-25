@@ -210,7 +210,7 @@
         <div class=" col-12 col-md-6 mh-50 my-3">
           <img class="img-fluid w-75 justify-content-center" src="imagenes/IMAGE ABOUT US.jpg" alt="About Us">
         </div>
-        <div class=" col-6 order-last mt-0 mb-5">
+        <div class=" col-6 order-last mt-0 mb-5 text-center">
           <button href="#" class="btn btn-primary">Read More</button>
         </div>
       </div>
@@ -256,8 +256,6 @@
 
     </div>
   </div>
-
-
 
   <div id="div6" class="container-fluid py-5">
     <div id="contenedor">
@@ -401,54 +399,6 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-      <!-- 
-      <div class="card-deck my-5 mx-2 d-none d-md-inline-flex">
-        <div class="card">
-          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 1.jpg"
-            alt="Card image cap">
-          <div class="card-body text-center">
-            <h5 class="card-title">Jhon Smith</h5>
-            <h6 class="card-text">Math Teacher</h6>
-            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-          </div>
-
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 2.jpg"
-            alt="Card image cap">
-          <div class="card-body text-center">
-            <h5 class="card-title">Dave Morgan</h5>
-            <h6 class="card-text">Math Teacher</h6>
-            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-          </div>
-
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 4.jpg"
-            alt="Card image cap">
-          <div class="card-body text-center">
-            <h5 class="card-title">Zara Smith</h5>
-            <h6 class="card-text mx-auto">Biology Teacher</h6>
-            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-          </div>
-
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="imagenes/IMAGE BACKGROUND CARD TEAM  (3).jpg" alt="Card image cap">
-
-          <img class="card-img-top mx-auto rounded-circle overlaying" src="imagenes/IMAGE TEAM 3.jpg"
-            alt="Card image cap">
-          <div class="card-body text-center">
-            <h5 class="card-title">Jimena Soto</h5>
-            <h6 class="card-text">Math Teacher</h6>
-            <button type="submit" class="btn btn-outline-warning justify-content-center ">Read More</button>
-          </div>
-
-        </div>
-      </div> -->
 
       <div class="container-fluid text-center my-3 d-none d-md-inline-flex miCarrusel">
         <div class="row mx-auto my-auto">
@@ -533,8 +483,8 @@
           <p>VIEW TESTIMONIALS</p>
           <h1>FOR US IT IS VERY IMPORTANT TO KNOW THE OPINIONS OF OUR CLIENTS</H1>
         </div>
-        <div class="col-12 col-md-6">
 
+        <div class="col-12 col-md-6">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
@@ -557,12 +507,10 @@
 
             <div id="carouselButtons">
               <button id="playButton" type="button" class="btn btn-outline-light btn-lg video-btn" data-toggle="modal"
-                data-src="https://www.youtube.com/embed/NFWSFbqL0A0" data-target="#myModal">
+                data-src="Videos/review-1.mp4" data-target="#myModal">
                 <i class="bi bi-play-circle-fill"></i>
               </button>
             </div>
-
-
             <div class="nameDiv">Nombre Apellido</div>
             <ol class="carousel-indicators carousel-indicatorsTwo">
               <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
@@ -573,13 +521,30 @@
             </ol>
 
           </div>
-
-
-
         </div>
       </div>
-    </div>
 
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+
+      
+         <div class="modal-body">
+
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>        
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+        </div>
+        </div>
+        </div>
+         </div>
+
+    </div>
   </div>
 
   <div id="div9" class="container-fluid">
@@ -645,30 +610,30 @@
 
   <script>
 
-    // $('#recipeCarousel'), function () {
+    // Carrousel Horizontal Function
 
-      $('#recipeCarousel').carousel({
-        interval: 2000
-      })
+    $('#recipeCarousel').carousel({
+      interval: 2000
+    })
 
-      $('.miCarrusel .miItem').each(function () {
-        var next = $(this).next();
+    $('.miCarrusel .miItem').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 2; i++) {
+        next = next.next();
         if (!next.length) {
           next = $(this).siblings(':first');
         }
+
         next.children(':first-child').clone().appendTo($(this));
+      }
+    });
 
-        for (var i = 0; i < 2; i++) {
-          next = next.next();
-          if (!next.length) {
-            next = $(this).siblings(':first');
-          }
-
-          next.children(':first-child').clone().appendTo($(this));
-        }
-      });
-
-    // };
+    // Top Header Function
 
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
@@ -690,6 +655,8 @@
         }
       }
     });
+
+    // Modal Function
 
     $(document).ready(function () {
       // Gets the video src from the data-src on each button
