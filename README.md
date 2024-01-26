@@ -1,2 +1,2 @@
-# Test-Spanish
-Frontend Test of a single web page
+# University Front-Page
+Frontend Test of a single-page website.
